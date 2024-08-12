@@ -1,0 +1,29 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Manage tasks and set reminders",
+          "examplePhrases": [
+            "Alexa, open task manager",
+            "Alexa, add a task",
+            "Alexa, set a reminder"
+          ],
+          "name": "Task Manager",
+          "description": "A skill to help manage daily tasks and set reminders."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Test the skill using the Alexa developer console.",
+      "category": "PRODUCTIVITY"
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda_function.py",
+          "uri": "arn:aws:lambda:your-region:your-account-id:function:your-function-name"
+        }
+      }
+    }
+  }
+}
